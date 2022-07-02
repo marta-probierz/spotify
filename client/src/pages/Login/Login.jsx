@@ -12,7 +12,12 @@ export const Login = () => {
 
   return (
     <div className={styles.container}>
-      <Button url={AUTH_URL} label={t`home.loginButton`} />
+      <div className={styles.containerLeft}>
+        <div className={styles.more}>{t`home.more`}</div>
+        <div className={styles.then}>{t`home.then`}</div>
+        <Button url={AUTH_URL} label={t`home.loginButton`} />
+      </div>
+      <div className={styles.containerRight}></div>
     </div>
   );
 };

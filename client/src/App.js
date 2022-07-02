@@ -20,7 +20,14 @@ function App() {
       <div className="App" id={theme}>
         <div className="switch">
           <label> {theme === 'light' ? '🔆' : '🌙'}</label>
-          <ReactSwitch onChange={toggleTheme} checked={theme === 'dark'} uncheckedIcon checkedIcon />
+          <ReactSwitch
+            onChange={toggleTheme}
+            checked={theme === 'dark'}
+            uncheckedIcon
+            checkedIcon
+            onColor="#1DB954"
+            width={50}
+          />
         </div>
         <Login />
       </div>

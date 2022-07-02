@@ -1,14 +1,16 @@
 .button {
   background-color: #1DB954;
-  padding: 20px;
+  padding: 18px;
   border-radius: 50px;
   border-style: none;
-  max-height: 9vh;
+  max-height: 10vh;
+  max-width: fit-content;
 
   .text {
-    font-size: 25px;
+    font-size: 26px;
     text-decoration: none;
     color: #FFFFFF;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 4px;
   }
