@@ -3,5 +3,10 @@
     "more": "More",
     "then": "than Spotify",
     "loginButton": "Login"
+  },
+  "carousel": {
+    "login": "Login with Spotify",
+    "play": "Search and select a song",
+    "enjoy": "Enjoy the music"
   }
 }
