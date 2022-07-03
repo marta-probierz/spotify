@@ -1,3 +1,12 @@
 {
-  
+  "home": {
+    "more": "Więcej",
+    "then": "niż Spotify",
+    "loginButton": "Login"
+  },
+  "carousel": {
+    "login": "Zaloguj się przez Spotify",
+    "play": "Szukaj i wybierz piosenkę",
+    "enjoy": "Ciesz się muzyką"
+  }
 }

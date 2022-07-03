@@ -1,8 +1,10 @@
 import { createContext, useState } from 'react';
 import ReactSwitch from 'react-switch';
 
-import './App.scss';
+import i18n from './i18n';
 import { Dashboard, Login } from './pages';
+import { Languages } from './components';
+import './App.scss';
 
 const code = new URLSearchParams(window.location.search).get('code');
 
@@ -10,9 +12,15 @@ export const ThemeContext = createContext(null);
 
 function App() {
   const [theme, setTheme] = useState('dark');
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   const toggleTheme = () => {
     setTheme((curr) => (curr === 'light' ? 'dark' : 'light'));
   };
+
   return code ? (
     <Dashboard code={code} />
   ) : (
@@ -28,6 +36,7 @@ function App() {
             onColor="#1DB954"
             width={50}
           />
+          <Languages onClickUS={() => changeLanguage('en')} onClickPL={() => changeLanguage('pl')} />
         </div>
         <Login />
       </div>
