@@ -10,6 +10,7 @@
     "i18next": "^21.8.2",
     "i18next-browser-languagedetector": "^6.1.4",
     "i18next-http-backend": "^1.4.0",
+    "infinite-react-carousel": "^1.2.11",
     "prettier": "^2.6.2",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
