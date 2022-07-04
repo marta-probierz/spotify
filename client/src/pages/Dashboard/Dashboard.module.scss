@@ -1,0 +1,19 @@
+.container {
+  height: 100vh;
+  margin: 1rem 4rem;
+  border: 5px solid #1DB954;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+
+  .searchBar {
+    width: 90%;
+    height: 5vh;
+    margin-top: 2rem;
+    border-radius: 50px;
+    border-style: none;
+    padding-right: 1rem;
+    outline: none;
+    text-indent: 1.5rem;
+  }
+}
