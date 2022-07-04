@@ -21,9 +21,7 @@ function App() {
     setTheme((curr) => (curr === 'light' ? 'dark' : 'light'));
   };
 
-  return code ? (
-    <Dashboard code={code} />
-  ) : (
+  return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="App" id={theme}>
         <div className="switch">
@@ -38,7 +36,7 @@ function App() {
           />
           <Languages onClickUS={() => changeLanguage('en')} onClickPL={() => changeLanguage('pl')} />
         </div>
-        <Login />
+        {code ? <Dashboard code={code} /> : <Login />}
       </div>
     </ThemeContext.Provider>
   );

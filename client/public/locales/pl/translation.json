@@ -8,5 +8,8 @@
     "login": "Zaloguj się przez Spotify",
     "play": "Szukaj i wybierz piosenkę",
     "enjoy": "Ciesz się muzyką"
+  },
+  "dashboard": {
+    "search": "Szukaj"
   }
 }
