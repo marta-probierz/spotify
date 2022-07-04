@@ -1,15 +1,17 @@
 .container {
-  height: 3rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
-
-  .logo_img {
-    height: 1.5rem;
-  }
 
   .text {
     color: #1DB954;
     padding-right: 5px;
-    margin-top: 2px;
+    margin-top: 7px;
+    font-size: 14px;
+  }
+
+  .logo_img {
+    margin-top: 5px;
+    height: 1.2rem;
   }
 }
