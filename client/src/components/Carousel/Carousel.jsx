@@ -3,19 +3,19 @@ import Slider from 'infinite-react-carousel';
 import { useTranslation } from 'react-i18next';
 
 import styles from './Carousel.module.scss';
-import login from './Media/login.png';
-import play from './Media/play.png';
-import enjoy from './Media/enjoy.png';
+import login from '../../assets/login.png';
+import play from '../../assets/play.png';
+import enjoy from '../../assets/enjoy.png';
 
 export const Carousel = () => {
   const { t } = useTranslation();
   const settings = {
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 2500,
     dots: true,
     virtualList: true,
     duration: 20,
-    arrows: true,
+    arrows: false,
     wheel: true,
   };
   return (
