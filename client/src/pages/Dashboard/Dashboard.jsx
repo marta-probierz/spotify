@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import SpotifyWebApi from 'spotify-web-api-node';
 
 import { useAuth } from '../../utils/useAuth';
-import { Footer, Track } from '../../components';
+import { Footer, Track, Player } from '../../components';
 import styles from './Dashboard.module.scss';
 
 const spotifyApi = new SpotifyWebApi({
@@ -15,6 +15,12 @@ export const Dashboard = ({ code }) => {
   const accessToken = useAuth(code);
   const [search, setSearch] = useState('');
   const [searchResults, setSearchResults] = useState([]);
+  const [playingTrack, setPlayingTrack] = useState();
+
+  const chooseTrack = (track) => {
+    setPlayingTrack(track);
+    setSearch('');
+  };
 
   useEffect(() => {
     if (!accessToken) return;
@@ -67,8 +73,11 @@ export const Dashboard = ({ code }) => {
         />
         <div className={styles.songs}>
           {searchResults.map((track) => (
-            <Track key={track.uri} track={track} />
+            <Track key={track.uri} track={track} chooseTrack={chooseTrack} />
           ))}
+        </div>
+        <div className={styles.player}>
+          <Player accessToken={accessToken} trackUri={playingTrack?.uri} />
         </div>
       </div>
       <Footer />

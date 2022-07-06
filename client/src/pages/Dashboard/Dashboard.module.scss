@@ -29,8 +29,13 @@
     padding: 1.5rem;
     margin: 1rem 4rem 0;
     background-color: #fff;
-    max-height: 75vh;
+    max-height: 65vh;
     width: 90%;
-    border-radius: 0 0 35px 35px;
+    margin-bottom: .5rem;
+  }
+
+  .player {
+    margin: .5rem;
+    width: 90%;
   }
 }
