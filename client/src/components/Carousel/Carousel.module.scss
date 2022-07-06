@@ -1,11 +1,29 @@
+$small: 300px;
+$medium: 600px;
+
 .container {
   padding: 1rem;
   margin-top: 2rem;
   width: 570px;
 
+  @media screen and (max-width: $small) {
+    width: 290px;
+  }
+  @media screen and (max-width: $medium) {
+    width: 360px;
+  }
+
   .slide_img {
     height: 600px;
     width: 545px;
+
+    @media screen and (max-width: $small) {
+      width: 290px;
+    }
+    @media screen and (max-width: $medium) {
+      height: 450px;
+      width: 360px;
+    }
   }
 
   .text {
