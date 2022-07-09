@@ -1,5 +1,6 @@
 $small: 300px;
 $medium: 600px;
+$big: 830px;
 
 * {
   margin: 0;
@@ -10,7 +11,7 @@ $medium: 600px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    @media screen and (max-width: $medium) {
+    @media screen and (max-width: $big) {
       grid-template-columns: 1fr;
       grid-template-rows: auto;
     }
