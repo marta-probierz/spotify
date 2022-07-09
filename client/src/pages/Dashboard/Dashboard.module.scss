@@ -2,17 +2,21 @@ $small: 300px;
 $medium: 600px;
 
 .container {
-  height: 100vh;
+  height: 85vh;
   margin: 1rem 2rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  @media screen and (max-width: $medium) {
+    max-height: 80vh;
+  }
+
   .searchBar {
     -webkit-appearance: none;
     width: 90%;
-    height: 6vh;
+    min-height: 6vh;
     margin-top: .5rem;
     border-radius: 35px 35px 0 0;
     border-style: none;
@@ -35,6 +39,10 @@ $medium: 600px;
     max-height: 65vh;
     width: 90%;
     margin-bottom: .5rem;
+
+    @media screen and (max-width: $medium) {
+      padding: .5rem 0;
+    }
   }
 
   .player {

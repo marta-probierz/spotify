@@ -1,9 +1,16 @@
+$small: 300px;
+$medium: 600px;
+
 .container {
   display: flex;
   align-items: center;
   cursor: pointer;
   transition: background-color ease;
   padding-left: .5rem;
+
+  @media screen and (max-width: $medium) {
+    width: 70vw;
+  }
 
   &:hover {
     background-color: #f0f0f0;
@@ -19,6 +26,12 @@
     margin-left: 2rem;
     width: 70vw;
     padding: 1rem;
+
+    @media screen and (max-width: $medium) {
+      margin-left: 0;
+      width: 50vw;
+      padding-right: .5rem;
+    }
   }
 
   .artist {
