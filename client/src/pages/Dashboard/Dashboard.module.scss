@@ -49,4 +49,13 @@ $medium: 600px;
     margin: .5rem;
     width: 90%;
   }
+
+  .lyrics {
+    white-space: pre-wrap;
+    text-align: center;
+
+    @media screen and (max-width: $medium) {
+      padding: 1.5rem;
+    }
+  }
 }
