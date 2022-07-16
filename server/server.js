@@ -3,10 +3,12 @@ import express from 'express';
 import 'dotenv/config';
 import cors from 'cors';
 import bodyParser from 'body-parser';
+import lyricsFinder from 'lyrics-finder';
 
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/login', (req, res) => {
   const code = req.body.code;
@@ -45,11 +47,16 @@ app.post('/refresh', (req, res) => {
       res.json({
         accessToken: data.body.accessToken,
         expiresIn: data.body.expiresIn,
-      })
+      });
     })
     .catch(() => {
       res.sendStatus(400);
     });
+});
+
+app.get('/lyrics', async (req, res) => {
+  const lyrics = (await lyricsFinder(req.query.artist, req.query.track)) || 'No Lyrics Found';
+  res.json({ lyrics });
 });
 
 app.listen(3001);
