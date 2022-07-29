@@ -1,0 +1,25 @@
+{
+	"name": "spotify",
+	"version": "1.0.0",
+	"workspaces": [
+		"server",
+		"client"
+	],
+	"description": "![spotify](https://user-images.githubusercontent.com/75137091/179355861-1bcc0fcc-6f7d-4dc3-b9a4-f11b5ed972aa.png)",
+	"scripts": {
+		"start": "concurrently \"cd client && yarn start\" \"cd server && yarn dev\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/marta-probierz/spotify.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/marta-probierz/spotify/issues"
+	},
+	"homepage": "https://github.com/marta-probierz/spotify#readme",
+	"devDependencies": {
+		"concurrently": "^7.3.0"
+	}
+}
