@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node": "17.3.0",
+    "npm": "8.3.0"
+},
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js"
