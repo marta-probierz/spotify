@@ -27,11 +27,11 @@ Zawiera on dwie funkcje: przełączanie na dark bądź light mode oraz zmiana j�
 
 #### - Logowanie
 
-Użytkownik może tu znaleźć przycisk, dzięki któremu zostanie zalogowany do swojego konta za pośrednictwem Spotify.
+Z lewej strony użytkownik może znaleźć przycisk LOGIN, dzięki któremu zostanie zalogowany do swojego konta za pośrednictwem Spotify.
 
 #### - Karuzela
 
-Zawiera krótką instrukcję, dotyczącą działania strony.
+Z prawej strony znajduje się karuzela, która zawiera krótką instrukcję, dotyczącą działania strony.
 
 
 ### Player
